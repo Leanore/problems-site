@@ -1,0 +1,15 @@
+<%= simple_form_for @solved_problem, :action => :solve, :method => :post do |f| %>
+  <%= f.input :given_answer %>
+  <div class="form-actions">
+    <%= f.button :submit, "Solve", :class => "btn btn-success" %>
+  </div>
+<% end %>
+
+
+<% form_tag(:action => "solve",:id => @problem.id) do%>
+    <p>
+      <b>Answer: </b>
+      <%=text_field :answer,params[:answer]%>
+    </p>
+    <p><%= submit_tag("solve")%></P>
+<% end %>

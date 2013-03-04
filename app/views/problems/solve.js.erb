@@ -1,0 +1,6 @@
+page[:solve_form].reset
+page[:site_notice].reset
+page[:flash_notice].reset
+page.replace_html :site_notice, flash[:notice]
+page.replace_html :flash_notice, flash[:notice]
+page.replace_html :notice, flash[:notice]
