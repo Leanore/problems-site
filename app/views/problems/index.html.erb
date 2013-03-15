@@ -1,0 +1,70 @@
+<script type="text/javascript">
+    $("[rel=tooltip]").tooltip();
+</script>
+
+<%- model_class = Problem -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize %>
+    <%= link_to t('New problem'), new_problem_path, :class => 'btn btn-primary pull-right' %>
+  </h1>
+</div>
+
+<div class="row">
+  <div class="span9">
+    <% @problems.each do |problem| %>
+        <table class="table border-free-table">
+          <tbody>
+        <tr class="title-class">
+          <td class="title" >
+            <h3>
+              <%= link_to problem.title, problem_path(problem) %>
+            </h3>
+          </td>
+          <td>
+          </td>
+          <td class="title pull-right">
+            <h3><span class="badge badge-success" rel="tooltip" title="Times solved"> <%= problem.solved_times%> </span></h3>
+          </td>
+        </tr>
+        </tbody>
+          </table>
+        <table class="table border-free-table">
+          <tbody>
+        <tr class="description-class" >
+          <td class="description" >
+            <%= problem.description.html_safe %>
+            <br/>
+          </td>
+        </tr>
+        </tbody>
+        </table>
+        <table class="table border-free-table">
+          <tbody>
+              <tr>
+                <td class="user-posted">
+                  <i class="icon-user"></i> <%= link_to problem.user.try(:login), user_path(problem.user_id) %>
+                  &nbsp; &nbsp;
+                  <%= problem.posted_date %>
+                </td>
+                <td class="tags pull-right">
+                  <ul class="tagit tagitwithoutX">
+                    <% problem.tag_list.each do |tag| %>
+                        <li class="tagit-choice ui-widget-content ui-state-default ui-corner-all tagitwithoutX">
+                          <%= tag %>
+                        </li>
+                    <% end %>
+                  </ul>
+                </td>
+              </tr>
+          </tbody>
+        </table>
+		<hr />
+  <% end %>
+    <%= will_paginate(@problems)  %>
+  </div>
+</div>
+
+
+
+
+

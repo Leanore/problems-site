@@ -1,0 +1,7 @@
+<legend><h2>Problems posted by <%= @user.login %></h2></legend>
+
+<% @problems_posted.each do |problem| %>
+    <%= render 'problems_posted_table' %>
+<% end %>
+
+<%= will_paginate(@problems_posted) %>

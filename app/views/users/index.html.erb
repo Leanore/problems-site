@@ -1,0 +1,35 @@
+<%- model_class = User -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
+</div>
+
+
+<table class="table table-hover">
+  <thead>
+  <tr>
+    <th><%= model_class.human_attribute_name(:login) %></th>
+    <th><%= model_class.human_attribute_name(:rating) %></th>
+    <th><%= model_class.human_attribute_name(:last_sign_in_at) %></th>
+    <th><%= model_class.human_attribute_name(:created_at) %></th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @users.each do |user| %>
+      <tr>
+        <td><%= link_to user.login, user_path(user.id) %></td>
+        <td><%=  user.rating.problems_posted + user.rating.problems_solved %></td>
+        <td>
+          <% if user.current_sign_in_at == DateTime.now%>
+            <%=  online  %>
+          <% else %>
+            <%=user.last_sign_in_at %>
+          <% end %>
+        </td>
+        <td><%=  user.created_at.to_date %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+<%= will_paginate(@users)  %>
+
+

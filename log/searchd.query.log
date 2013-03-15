@@ -1,0 +1,146 @@
+[Sat Sep  8 19:16:12.729 2012] 0.002 sec [all/2/rel 7 (0,20)] [problem_core]
+[Sat Sep  8 19:16:24.813 2012] 0.061 sec [all/2/rel 1 (0,20)] [problem_core] a frog
+[Sat Sep  8 19:16:40.945 2012] 0.000 sec [all/2/rel 0 (0,20)] [problem_core] neo
+[Sat Sep  8 19:17:24.926 2012] 0.000 sec [all/2/rel 7 (0,20)] [problem_core]
+[Sat Sep  8 19:18:56.444 2012] 0.000 sec [all/2/rel 7 (0,20)] [problem_core]
+[Sat Sep  8 19:19:30.330 2012] 0.000 sec [all/2/rel 7 (0,20)] [problem_core]
+[Sat Sep  8 19:20:05.387 2012] 0.000 sec [all/2/rel 7 (0,20)] [problem_core]
+[Sat Sep  8 19:20:33.540 2012] 0.000 sec [all/2/rel 7 (0,20)] [problem_core]
+[Sat Sep  8 19:21:54.326 2012] 0.000 sec [all/2/rel 7 (0,20)] [problem_core]
+[Sat Sep  8 19:22:22.869 2012] 0.000 sec [all/2/rel 7 (0,20)] [problem_core]
+[Sat Sep  8 19:22:37.644 2012] 0.000 sec [all/2/rel 7 (0,20)] [problem_core]
+[Sat Sep  8 19:22:47.095 2012] 0.000 sec [all/2/rel 1 (0,20)] [problem_core] has six
+[Sat Sep  8 19:23:50.983 2012] 0.000 sec [all/2/rel 1 (0,20)] [problem_core] has six
+[Sat Sep  8 19:24:04.466 2012] 0.000 sec [all/2/rel 1 (0,20)] [problem_core] has six
+[Sat Sep  8 19:24:38.063 2012] 0.000 sec [all/2/rel 1 (0,20)] [problem_core] has six
+[Sat Sep  8 19:24:47.285 2012] 0.000 sec [all/2/rel 1 (0,20)] [problem_core] has six
+[Sat Sep  8 19:25:03.003 2012] 0.000 sec [all/2/rel 1 (0,20)] [problem_core] has six
+[Sat Sep  8 19:25:15.310 2012] 0.000 sec [all/2/rel 1 (0,20)] [problem_core] has six
+[Sat Sep  8 19:25:26.471 2012] 0.000 sec [all/2/rel 1 (0,20)] [problem_core] has six
+[Sat Sep  8 19:25:36.866 2012] 0.000 sec [all/2/rel 1 (0,20)] [problem_core] has six
+[Sat Sep  8 19:25:59.384 2012] 0.000 sec [all/2/rel 1 (0,20)] [problem_core] has six
+[Sat Sep  8 19:30:14.424 2012] 0.000 sec [all/2/rel 7 (0,20)] [problem_core]
+[Sat Sep  8 19:30:46.776 2012] 0.000 sec [all/2/rel 7 (0,20)] [problem_core]
+[Sat Sep  8 19:30:58.516 2012] 0.000 sec [all/2/rel 1 (0,20)] [problem_core] 30
+[Sat Sep  8 19:31:05.844 2012] 0.000 sec [all/2/rel 7 (0,20)] [problem_core]
+[Sat Sep  8 20:09:07.893 2012] 0.000 sec [all/2/rel 7 (0,20)] [problem_core]
+[Sat Sep  8 21:31:28.204 2012] 0.011 sec [all/2/rel 7 (0,20)] [problem_core]
+[Sat Sep  8 22:06:44.136 2012] 0.014 sec [all/2/rel 7 (0,20)] [problem_core]
+[Sat Sep  8 22:06:58.666 2012] 0.000 sec [all/2/rel 7 (0,20)] [problem_core]
+[Sat Sep  8 22:12:51.903 2012] 0.000 sec [all/2/rel 7 (0,20)] [problem_core]
+[Sat Sep  8 22:13:07.098 2012] 0.000 sec [all/2/rel 7 (0,20)] [problem_core]
+[Sat Sep  8 22:16:07.968 2012] 0.000 sec [all/2/rel 7 (0,20)] [problem_core]
+[Sat Sep  8 22:16:20.906 2012] 0.000 sec [all/2/rel 7 (0,20)] [problem_core]
+[Sat Sep  8 23:35:22.476 2012] 0.011 sec [all/2/rel 7 (0,20)] [problem_core]
+[Sat Sep  8 23:36:38.672 2012] 0.000 sec [all/2/rel 7 (0,20)] [problem_core]
+[Sun Sep  9 13:26:45.533 2012] 0.010 sec [all/2/rel 7 (0,20)] [problem_core]
+[Sun Sep  9 13:27:13.852 2012] 0.000 sec [all/2/rel 7 (0,20)] [problem_core]
+[Sun Sep  9 13:29:17.446 2012] 0.000 sec [all/2/rel 7 (0,20)] [problem_core]
+[Sun Sep  9 13:30:19.776 2012] 0.000 sec [all/2/rel 7 (0,5)] [problem_core]
+[Sun Sep  9 13:31:06.643 2012] 0.000 sec [all/2/rel 7 (0,5)] [problem_core]
+[Sun Sep  9 13:31:16.272 2012] 0.028 sec [all/2/rel 4 (0,5)] [problem_core] a
+[Sun Sep  9 13:31:27.629 2012] 0.000 sec [all/2/rel 7 (0,5)] [problem_core]
+[Sun Sep  9 13:43:00.199 2012] 0.000 sec [all/2/rel 7 (0,5)] [problem_core]
+[Sun Sep  9 13:43:17.482 2012] 0.000 sec [all/2/rel 7 (0,5)] [problem_core]
+[Sun Sep  9 13:43:31.335 2012] 0.000 sec [all/2/rel 7 (0,5)] [problem_core]
+[Sun Sep  9 13:49:03.406 2012] 0.000 sec [all/2/rel 7 (0,5)] [problem_core]
+[Sun Sep  9 13:49:39.227 2012] 0.000 sec [all/2/rel 7 (0,5)] [problem_core]
+[Sun Sep  9 13:56:57.656 2012] 0.000 sec [all/2/rel 7 (0,5)] [problem_core]
+[Sun Sep  9 13:57:10.097 2012] 0.000 sec [all/2/rel 7 (0,5)] [problem_core]
+[Sun Sep  9 14:13:53.696 2012] 0.000 sec [all/2/rel 7 (0,5)] [problem_core]
+[Sun Sep  9 14:27:16.456 2012] 0.000 sec [all/2/attr+ 7 (0,5)] [problem_core]
+[Sun Sep  9 14:27:27.607 2012] 0.000 sec [all/2/attr+ 7 (0,5)] [problem_core]
+[Sun Sep  9 14:27:36.786 2012] 0.000 sec [all/2/attr+ 7 (0,5)] [problem_core]
+[Sun Sep  9 14:28:41.432 2012] 0.000 sec [all/2/attr+ 7 (5,5)] [problem_core]
+[Sun Sep  9 14:28:47.468 2012] 0.000 sec [all/2/attr+ 7 (0,5)] [problem_core]
+[Sun Sep  9 14:29:04.931 2012] 0.000 sec [all/2/attr+ 0 (0,5)] [problem_core] logic
+[Sun Sep  9 14:29:25.462 2012] 0.000 sec [all/2/attr+ 1 (0,5)] [problem_core] The Frog
+[Sun Sep  9 14:29:36.569 2012] 0.000 sec [all/2/attr+ 0 (0,5)] [problem_core] logic math
+[Sun Sep  9 14:30:03.661 2012] 0.000 sec [all/2/attr+ 4 (0,5)] [problem_core] neo
+[Sun Sep  9 14:30:15.324 2012] 0.000 sec [all/2/attr+ 7 (0,5)] [problem_core] 2012
+[Sun Sep  9 14:31:07.816 2012] 0.000 sec [all/2/attr+ 2 (0,5)] [problem_core] jane doe
+[Sun Sep  9 15:09:25.682 2012] 0.000 sec [all/2/attr+ 7 (0,5)] [problem_core]
+[Sun Sep  9 15:11:34.077 2012] 0.000 sec [all/2/attr+ 7 (0,5)] [problem_core]
+[Sun Sep  9 15:14:17.332 2012] 0.000 sec [all/2/attr+ 7 (0,5)] [problem_core]
+[Sun Sep  9 15:49:08.209 2012] 0.000 sec [all/2/attr+ 7 (0,5)] [problem_core]
+[Sun Sep  9 15:49:13.919 2012] 0.000 sec [all/2/attr+ 7 (0,5)] [problem_core] logic
+[Sun Sep  9 15:49:22.696 2012] 0.000 sec [all/2/attr+ 1 (0,5)] [problem_core] math
+[Sun Sep  9 15:56:40.730 2012] 0.000 sec [all/2/attr+ 7 (0,5)] [problem_core]
+[Sun Sep  9 15:56:44.752 2012] 0.000 sec [all/2/attr+ 1 (0,5)] [problem_core] math
+[Sun Sep  9 16:57:47.589 2012] 0.000 sec [all/2/attr+ 7 (0,5)] [problem_core]
+[Sun Sep  9 16:58:05.341 2012] 0.000 sec [all/2/attr+ 7 (0,5)] [problem_core]
+[Sun Sep  9 17:13:35.140 2012] 0.000 sec [all/2/attr+ 1 (0,5)] [problem_core] math
+[Sun Sep  9 17:13:49.094 2012] 0.000 sec [all/2/attr+ 7 (0,5)] [problem_core]
+[Sun Sep  9 17:13:53.750 2012] 0.000 sec [all/2/attr+ 7 (0,5)] [problem_core] logic
+[Sun Sep  9 17:14:57.231 2012] 0.000 sec [all/2/attr+ 7 (0,5)] [problem_core]
+[Sun Sep  9 17:15:04.212 2012] 0.000 sec [all/2/attr+ 7 (0,5)] [problem_core] logic
+[Sun Sep  9 17:15:26.371 2012] 0.000 sec [all/2/attr+ 7 (0,5)] [problem_core] logic
+[Sun Sep  9 17:20:38.174 2012] 0.000 sec [all/2/attr+ 7 (0,5)] [problem_core]
+[Sun Sep  9 17:23:16.359 2012] 0.000 sec [all/2/attr+ 7 (0,5)] [problem_core]
+[Sun Sep  9 17:23:44.536 2012] 0.000 sec [all/2/attr+ 7 (0,5)] [problem_core]
+[Sun Sep  9 17:25:34.663 2012] 0.000 sec [all/2/attr+ 7 (0,5)] [problem_core]
+[Sun Sep  9 17:26:12.044 2012] 0.000 sec [all/2/attr+ 7 (0,5)] [problem_core]
+[Sun Sep  9 17:27:55.685 2012] 0.000 sec [all/2/attr+ 7 (0,5)] [problem_core]
+[Sun Sep  9 20:04:35.367 2012] 0.003 sec [all/2/attr+ 7 (0,5)] [problem_core]
+[Sun Sep  9 20:05:11.076 2012] 0.000 sec [all/2/attr+ 7 (0,5)] [problem_core]
+[Sun Sep  9 21:17:48.033 2012] 0.000 sec [all/2/attr+ 7 (0,5)] [problem_core]
+[Sun Sep  9 21:17:59.643 2012] 0.000 sec [all/2/attr+ 7 (0,5)] [problem_core]
+[Sun Sep  9 21:22:57.106 2012] 0.000 sec [all/2/attr+ 7 (0,5)] [problem_core]
+[Sun Sep  9 21:23:00.854 2012] 0.000 sec [all/2/attr+ 7 (0,5)] [problem_core]
+[Sun Sep  9 21:32:49.821 2012] 0.000 sec [all/2/attr+ 7 (0,5)] [problem_core]
+[Sun Sep  9 21:33:08.935 2012] 0.000 sec [all/2/attr+ 7 (0,5)] [problem_core]
+[Sun Sep  9 21:41:19.087 2012] 0.000 sec [all/2/attr+ 7 (0,5)] [problem_core]
+[Sun Sep  9 21:41:59.438 2012] 0.000 sec [all/2/attr+ 7 (0,5)] [problem_core]
+[Sun Sep  9 21:42:33.460 2012] 0.000 sec [all/2/attr+ 7 (0,5)] [problem_core]
+[Sun Sep  9 21:50:20.827 2012] 0.017 sec [all/3/rel 0 (0,20)] [problem_core]
+[Sun Sep  9 21:50:20.937 2012] 0.000 sec [all/2/attr+ 7 (0,5)] [problem_core]
+[Sun Sep  9 21:50:32.743 2012] 0.000 sec [all/2/attr+ 7 (0,5)] [problem_core]
+[Sun Sep  9 21:51:22.958 2012] 0.000 sec [all/3/rel 0 (0,20)] [problem_core]
+[Sun Sep  9 21:51:23.059 2012] 0.000 sec [all/2/attr+ 7 (0,5)] [problem_core]
+[Sun Sep  9 21:53:27.691 2012] 0.000 sec [all/2/attr+ 7 (0,5)] [problem_core]
+[Sun Sep  9 21:56:32.422 2012] 0.000 sec [all/2/attr+ 7 (0,5)] [problem_core]
+[Sun Sep  9 22:00:42.749 2012] 0.000 sec [all/2/attr+ 7 (0,5)] [problem_core]
+[Sun Sep  9 22:11:48.556 2012] 0.000 sec [all/2/attr+ 7 (0,5)] [problem_core]
+[Sun Sep  9 22:33:29.581 2012] 0.000 sec [all/2/attr+ 7 (0,5)] [problem_core]
+[Sun Sep  9 22:38:43.547 2012] 0.000 sec [all/2/attr+ 7 (0,5)] [problem_core]
+[Sun Sep  9 22:44:51.823 2012] 0.000 sec [all/2/attr+ 7 (0,5)] [problem_core]
+[Tue Nov 13 15:54:31.457 2012] 0.010 sec [all/2/attr+ 7 (0,5)] [problem_core]
+[Tue Nov 13 15:54:43.832 2012] 0.000 sec [all/2/attr+ 7 (5,5)] [problem_core]
+[Tue Nov 13 15:54:58.803 2012] 0.000 sec [all/2/attr+ 7 (0,5)] [problem_core]
+[Tue Nov 13 15:55:03.878 2012] 0.030 sec [all/2/attr+ 1 (0,5)] [problem_core] socks
+[Tue Nov 13 15:57:28.922 2012] 0.000 sec [all/2/attr+ 7 (0,5)] [problem_core]
+[Sun Mar  3 18:36:42.288 2013] 0.010 sec [all/2/attr+ 10 (0,5)] [problem_core]
+[Sun Mar  3 18:44:04.144 2013] 0.000 sec [all/2/attr+ 10 (0,5)] [problem_core]
+[Sun Mar  3 18:44:15.719 2013] 0.000 sec [all/2/attr+ 10 (0,5)] [problem_core]
+[Sun Mar  3 19:17:30.183 2013] 0.015 sec [all/2/attr+ 10 (0,5)] [problem_core]
+[Sun Mar  3 19:20:03.902 2013] 0.000 sec [all/2/attr+ 10 (0,5)] [problem_core]
+[Sun Mar  3 19:20:48.662 2013] 0.000 sec [all/2/attr+ 10 (0,5)] [problem_core]
+[Sun Mar  3 19:26:21.497 2013] 0.000 sec [all/2/attr+ 10 (0,5)] [problem_core]
+[Sun Mar  3 19:30:17.242 2013] 0.000 sec [all/2/attr+ 10 (0,5)] [problem_core]
+[Sun Mar  3 19:31:06.452 2013] 0.000 sec [all/2/attr+ 10 (0,5)] [problem_core]
+[Sun Mar  3 19:41:52.449 2013] 0.000 sec [all/2/attr+ 10 (0,5)] [problem_core]
+[Sun Mar  3 19:47:31.567 2013] 0.000 sec [all/2/attr+ 10 (0,5)] [problem_core]
+[Sun Mar  3 19:48:05.069 2013] 0.000 sec [all/2/attr+ 10 (0,5)] [problem_core]
+[Sun Mar  3 19:48:38.565 2013] 0.000 sec [all/2/attr+ 10 (0,5)] [problem_core]
+[Sun Mar  3 19:49:00.292 2013] 0.000 sec [all/2/attr+ 10 (0,5)] [problem_core]
+[Sun Mar  3 19:51:20.927 2013] 0.000 sec [all/2/attr+ 10 (0,5)] [problem_core]
+[Sun Mar  3 19:51:38.588 2013] 0.000 sec [all/2/attr+ 10 (0,5)] [problem_core]
+[Sun Mar  3 19:52:46.517 2013] 0.000 sec [all/2/attr+ 10 (0,5)] [problem_core]
+[Sun Mar  3 19:54:12.636 2013] 0.000 sec [all/2/attr+ 10 (0,5)] [problem_core]
+[Sun Mar  3 19:55:05.394 2013] 0.000 sec [all/2/attr+ 10 (0,5)] [problem_core]
+[Sun Mar  3 19:55:25.361 2013] 0.000 sec [all/2/attr+ 10 (0,5)] [problem_core]
+[Sun Mar  3 19:55:43.540 2013] 0.000 sec [all/2/attr+ 10 (0,5)] [problem_core]
+[Sun Mar  3 19:55:56.061 2013] 0.000 sec [all/2/attr+ 10 (0,5)] [problem_core]
+[Sun Mar  3 19:56:09.319 2013] 0.000 sec [all/2/attr+ 10 (0,5)] [problem_core]
+[Sun Mar  3 20:02:58.021 2013] 0.000 sec [all/2/attr+ 10 (0,5)] [problem_core]
+[Sun Mar  3 20:06:22.296 2013] 0.000 sec [all/2/attr+ 10 (0,5)] [problem_core]
+[Sun Mar  3 20:08:45.060 2013] 0.000 sec [all/2/attr+ 10 (0,5)] [problem_core]
+[Sun Mar  3 20:09:48.149 2013] 0.000 sec [all/2/attr+ 10 (0,5)] [problem_core]
+[Sun Mar  3 20:38:57.221 2013] 0.000 sec [all/2/attr+ 10 (0,5)] [problem_core]
+[Sun Mar  3 20:51:37.205 2013] 0.000 sec [all/2/attr+ 10 (0,5)] [problem_core]
+[Sun Mar  3 20:54:24.852 2013] 0.000 sec [all/2/attr+ 10 (0,5)] [problem_core]
+[Sun Mar  3 20:56:20.195 2013] 0.000 sec [all/2/attr+ 10 (0,5)] [problem_core]
+[Sun Mar  3 20:58:38.586 2013] 0.000 sec [all/2/attr+ 10 (0,5)] [problem_core]
+[Mon Mar  4 13:49:37.550 2013] 0.010 sec [all/2/attr+ 10 (0,5)] [problem_core]
+[Mon Mar  4 13:51:13.943 2013] 0.000 sec [all/2/attr+ 10 (0,5)] [problem_core]
+[Mon Mar  4 13:52:17.977 2013] 0.000 sec [all/2/attr+ 10 (0,5)] [problem_core]

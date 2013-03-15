@@ -1,0 +1,4 @@
+<%= form_tag url_for(:controller => "/problems", :action => "index"), :method => "get", :class => "navbar-search pull-left" do %>
+    <%= text_field_tag :search, params[:search], :autocomplete => "off", :class => "search-query", :placeholder => "Search" %>
+    <%= submit_tag "Search", name: nil, :class => "btn search-btn" %>
+<% end %>

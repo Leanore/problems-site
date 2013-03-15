@@ -1,0 +1,10 @@
+<div id="log-items" class="unstyled">
+  <% if !@log_items.nil? and !@log_items.blank? %>
+      <% @log_items.each do |p| %>
+        <%= render 'layouts/log_item', :log_item => p %>
+      <% end %>
+  <% end %>
+</div>
+
+<%= subscribe_to "/problems/new" %>
+<%= subscribe_to "/problems/#{:id}/solve" %>

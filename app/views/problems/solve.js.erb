@@ -1,0 +1,9 @@
+$(":input:not(input[type=submit])").val("");
+$("#problem_desc").html("<%= escape_javascript( render(:partial => "problem_description") ) %>");
+$("#site_notice").html("<%= escape_javascript( render(:partial => "layouts/messages") ) %>");
+$("#form-actions-solve").html("<%= escape_javascript( render(:partial => "solve_form") ) %>");
+<% publish_to "/problems/#{:id}/solve" do %>
+$("#log").html("<%= escape_javascript( render(:partial => 'layouts/log') ) %>");
+<% end %>
+<% flash.discard %>
+

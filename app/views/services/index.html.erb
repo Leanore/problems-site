@@ -1,0 +1,23 @@
+<legend xmlns="http://www.w3.org/1999/html"><h2>Your services</h2></legend>
+
+<% @services.each do |serv| %>
+ <div>
+   <h3>
+     <%= serv.provider%>
+   </h3>
+   <dl class="dl-horizontal">
+     <% if serv.uname and !serv.uname.empty? %>
+     <dt><strong>Name:</strong></dt>
+     <dd><%= serv.uname%></dd>
+     <% end %>
+     <% if serv.uemail and !serv.uemail.empty? %>
+     <dt><strong>Email:</strong></dt>
+     <dd><%= serv.uemail%></dd>
+     <% end %>
+   </dl>
+   <br/>
+ </div>
+<% end %>
+
+<%= link_to 'Back',
+            :back, :class => 'btn' %>

@@ -1,0 +1,6 @@
+<p>
+  <%= log_item.at.to_time.strftime("%I:%M %p") %>, <%= log_item.at.to_date.strftime("%b %d: ") %>
+  <%= link_to "#{User.find_by_id(log_item.user_id).try(:login)}", user_path(log_item.user_id) %>
+  <%= log_item.content %>
+  <%= link_to "#{Problem.find_by_id(log_item.problem_id).try(:title)}", problem_path(log_item.problem_id) %>
+</p>

@@ -1,0 +1,20 @@
+[Sat Sep  8 19:08:14.660 2012] [ 8006] accepting connections
+[Sun Sep  9 01:00:48.373 2012] [ 8006] caught SIGTERM, shutting down
+[Sun Sep  9 01:00:59.815 2012] [ 8006] shutdown complete
+[Sun Sep  9 13:25:33.680 2012] [ 5118] accepting connections
+[Sun Sep  9 14:26:46.992 2012] [ 5118] caught SIGTERM, shutting down
+[Sun Sep  9 14:26:46.992 2012] [ 5118] shutdown complete
+[Sun Sep  9 14:26:47.380 2012] [ 5577] accepting connections
+[Sun Sep  9 15:47:58.784 2012] [ 5577] caught SIGTERM, shutting down
+[Sun Sep  9 15:47:58.812 2012] [ 5577] shutdown complete
+[Sun Sep  9 15:47:59.213 2012] [ 6018] accepting connections
+[Tue Nov 13 15:54:20.211 2012] [ 3239] accepting connections
+[Tue Nov 13 16:01:42.830 2012] [ 3239] caught SIGTERM, shutting down
+[Tue Nov 13 16:01:42.831 2012] [ 3239] shutdown complete
+[Sun Mar  3 18:34:51.876 2013] [ 4632] accepting connections
+[Sun Mar  3 23:14:17.963 2013] [ 4632] caught SIGTERM, shutting down
+[Sun Mar  3 23:14:18.431 2013] [ 4632] shutdown complete
+[Mon Mar  4 13:41:42.166 2013] [ 3110] accepting connections
+[Mon Mar  4 15:52:00.417 2013] [ 3110] caught SIGTERM, shutting down
+[Mon Mar  4 15:52:00.585 2013] [ 3110] shutdown complete
+[Fri Mar 15 16:38:00.374 2013] [ 2800] accepting connections

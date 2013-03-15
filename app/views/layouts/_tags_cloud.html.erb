@@ -1,0 +1,3 @@
+<% tag_cloud(@tags, %w(css3 css4 css5 css6)) do |tag, css_class| %>
+    <%= link_to tag.name, { :controller => "/tags", :action => :tag, :id => tag.name }, :class => css_class %>
+<% end %>

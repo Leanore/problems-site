@@ -1,0 +1,44 @@
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#mytags").tagit({
+            availableTags: <%= Problem.tag_counts.map(&:name).to_json.html_safe %> ,
+            singleField: true,
+            singleFieldNode: $('#tag_list')
+        });
+    });
+</script>
+
+
+<%= simple_form_for @problem, :html => { :class => 'form-horizontal' } do |f| %>
+    <%= f.error_notification %>
+
+    <div class="form-inputs">
+      <%= f.input :title, :autofocus => true, :input_html => {:class => "field-width"} %>
+      <%= f.input :description, :as => :ckeditor, :label => 'Description', :input_html => { :toolbar => 'Easy' } %>
+
+      <div class="control-group string optional">
+        <label class="string optional control-label" for="problem_tag_list">Tags</label>
+        <div class="controls">
+        <%= f.input :tag_list, :label => 'Tags', :as => :hidden, :input_html => { :id => "tag_list" } %>
+        <div class="inputs-list">
+          <ul id="mytags"></ul>
+        </div>
+        </div>
+      </div>
+
+      <%= f.simple_fields_for :answers do |p| %>
+        <%= render 'answer_fields', :f => p %>
+      <% end %>
+      <div>
+        <%= link_to_add_association 'add answer', f, :answers  %>
+      </div>
+    </div>
+
+    <div class="form-actions">
+      <%= link_to 'Back',
+                  :back, :class => 'btn' %>
+      <%= f.button :submit, "Update", :class => 'btn btn-primary' %>
+    </div>
+<% end %>
+
+

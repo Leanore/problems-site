@@ -1,0 +1,32 @@
+<% @problems_solved.each do |problem| %>
+<table class="table border-free-table">
+  <tbody>
+  <tr class="title-class">
+    <td class="title" >
+      <h3>
+        <%= link_to problem.problem.title, problem_path(problem.problem) %>
+      </h3>
+    </td>
+    <td>
+    </td>
+  </tr>
+  <tr class="description-class" >
+    <td class="description" >
+      <%= truncate(strip_tags(problem.problem.description),
+                   :length => 200) %>
+      <br/>
+    </td>
+  </tr>
+  <tr class="user-class" >
+    <td class="usser" >
+      <i>by <%= link_to problem.problem.user.login, user_path(problem.problem.user_id) %></i>
+    </td>
+  </tr>
+  <tr>
+    <td class="solved" >
+      Was solved at <%= problem.solved_at.to_time.strftime("%I:%M %p")%>, <%= problem.solved_at.to_date.strftime("%B %d ")%>
+    </td>
+  </tr>
+  </tbody>
+</table>
+<% end %>

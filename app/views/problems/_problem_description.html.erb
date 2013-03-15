@@ -1,0 +1,12 @@
+<dl class="dl-vertical">
+  <dt><strong><%= "User" %>:</strong></dt>
+  <dd><%= @problem.user.login %></dd>
+  <dt><strong><%= "Title" %>:</strong></dt>
+  <dd><%= @problem.title %></dd>
+  <dt><strong><%= "Description" %>:</strong></dt>
+  <dd><%= @problem.description.html_safe %></dd>
+  <dt><strong><%= "Posted at" %>:</strong></dt>
+  <dd><%= @problem.posted_date %></dd>
+  <dt><strong><%= "Times solved" %>:</strong></dt>
+  <dd><%= @problem.solved_times %></dd>
+</dl>

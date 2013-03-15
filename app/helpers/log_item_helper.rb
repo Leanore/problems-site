@@ -1,0 +1,2 @@
+module LogItemHelper
+end

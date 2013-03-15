@@ -1,0 +1,83 @@
+<script type="text/javascript">
+    $("[rel=tooltip]").tooltip();
+</script>
+
+<%- model_class = Profile -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => "#{@user.login}'s profile" %>
+    <span class="badge badge-info pull-right rating" rel="tooltip" title="Rating"><%= @user.rating.problems_solved + @user.rating.problems_posted%></span>
+  </h1>
+</div>
+<div class="row">
+  <div class="span6">
+    <dl class="dl-horizontal">
+      <% if @user.profile.fullname and !@user.profile.fullname.empty? %>
+      <dt><strong>Fullname:</strong></dt>
+      <dd><%= @user.profile.fullname%></dd>
+      <% end %>
+      <% if @user.profile.gender and !@user.profile.gender.empty? %>
+      <dt><strong>Gender:</strong></dt>
+      <dd><%= @user.profile.gender %></dd>
+      <% end %>
+      <% if !@user.profile.location.nil? and !@user.profile.location.empty? %>
+      <dt><strong>Location:</strong></dt>
+      <dd><%= @user.profile.location%></dd>
+      <% end %>
+      <% if !@user.profile.birth_date.nil? and !@user.profile.birth_date.blank? %>
+      <dt><strong>Date of Birth:</strong></dt>
+      <dd><%= @user.profile.birth_date%></dd>
+      <% end %>
+      <% if !@user.profile.shortbio.nil? and !@user.profile.shortbio.empty? %>
+      <dt><strong>Bio:</strong></dt>
+      <dd><%= @user.profile.shortbio%></dd>
+      <% end %>
+      <br/>
+      <dt><strong><%= model_class.human_attribute_name('Solved') %>:</strong></dt>
+      <dd><%= @user.rating.problems_solved %></dd>
+      <dt><strong><%= model_class.human_attribute_name('Posted') %>:</strong></dt>
+      <dd><%= @user.rating.problems_posted %></dd>
+    </dl>
+  </div>
+  <div class="span3">
+    <div class="avatar  pull-right">
+      <img src="<%= @user.profile.avatar %>" class="img-rounded">
+    </div>
+  </div>
+</div>
+
+<% if current_user == @user %>
+<div class="form-actions">
+  <%= link_to "Back to Users",
+              users_path, :class => 'btn'  %>
+  <%= link_to "Edit",
+              edit_user_path, :class => 'btn btn-primary' %>
+  <%= link_to "Services",
+              services_path(@user), :class => 'btn pull-right'%>
+</div>
+<% end %>
+
+
+<div class="row">
+  <div class="span4">
+    <h3>
+      Recent posted tasks
+    </h3>
+
+    <%= render 'problems_posted_table' %>
+
+    <% if @problems_posted.count > 0 %>
+      <p><%= link_to "View all", posted_problems_user_path(@user), :class => "btn" %></p>
+    <% end %>
+  </div>
+  <div class="span4">
+    <h3>
+      Recent solved tasks
+    </h3>
+
+    <%= render 'problems_solved_table'%>
+
+    <% if @problems_solved.count > 0 %>
+      <p><%= link_to "View all", solved_problems_user_path(@user), :class => "btn" %></p>
+    <% end %>
+  </div>
+</div>

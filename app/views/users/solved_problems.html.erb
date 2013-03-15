@@ -1,0 +1,7 @@
+<legend><h2>Problems solved by <%= @user.login %></h2></legend>
+
+<% @problems_solved.each do |problem| %>
+    <%= render 'problems_solved_table' %>
+<% end %>
+
+<%= will_paginate(@problems_solved) %>

@@ -1,0 +1,23 @@
+<legend><h2>Edit Profile</h2></legend>
+
+<%= simple_form_for(@profile, :url => user_path(@user.id), :html => { :method => :put }) do |f| %>
+    <%= f.error_notification %>
+
+    <div class="form-inputs">
+      <%= f.input :fullname, :autofocus => true, :autocomplete => "off", :input_html => { :class => "s-field" } %>
+      <%= f.input :gender, :collection => ["Male", "Female"], :input_html => { :class => "sc-field" } %>
+      <%= f.input :birth_date, :label => 'Birthday', :input_html => { :class => "birthday-field" } %>
+      <%= f.input :location, :input_html => { :class => "s-field" } %>
+      <%= f.input :shortbio, :label => 'Something about you', :input_html => { :class => "bio-field s-field" } %>
+      <%= f.input :avatar, :label => 'Avatar URL', :input_html => { :class => "s-field" } %>
+      <%= f.input :theme, :collection => ["dark", "light"], :label => 'Site theme', :include_blank => false, :input_html => { :class => "sc-field" } %>
+    </div>
+
+    <div class="form-actions">
+      <%= link_to t('.back', :default => t("helpers.links.back")),
+                  users_path, :class => 'btn'  %>
+      <%= f.button :submit, "Update", :class => "btn btn-primary" %>
+    </div>
+<% end %>
+
+<%= link_to "Back", :back %>

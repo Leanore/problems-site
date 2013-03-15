@@ -1,0 +1,105 @@
+@import "bootstrap_and_overrides";
+@import "jquery.tagit";
+
+.css1 { font-size: 1.0em; }
+.css2 { font-size: 1.2em; }
+.css3 { font-size: 1.4em; }
+.css4 { font-size: 1.6em; }
+.css5 { font-size: 1.8em; }
+.css6 { font-size: 2.0em; }
+.css7 { font-size: 2.2em; }
+.css8 { font-size: 2.4em; }
+.css9 { font-size: 2.6em; }
+.css10 { font-size: 2.7em; }
+
+.tags-cloud {
+  background: white url("cloud.png") center no-repeat;
+  min-height: 160px;
+}
+
+.single-tag{
+  padding-left: 25px;
+  padding-right:15px;
+  margin-top:25px;
+}
+
+.right-box {
+  padding: 15px;
+}
+
+.about {
+  background-color: rgb(215, 230, 255);
+}
+
+.hero-home {
+  background: white url("puzzle-big00.png") center no-repeat;
+}
+
+.actions {
+  background-color: rgb(215, 230, 255);
+  border-radius: 6px 6px 6px 6px;
+}
+
+.border-free-table td, th {
+  border: 0 !important;
+}
+
+.single-problem
+{
+
+  border: 2px;
+}
+
+.rating
+{
+  font-size: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.red-black
+{
+  color: #ff0000;
+}
+
+.field-width
+{
+  width: 400px;
+}
+
+.birthday-field
+{
+  width: 110px;
+}
+
+.s-field
+{
+  width: 325px;
+}
+
+.sc-field
+{
+  width: 339px;
+}
+
+.bio-field
+{
+  height: 100px;
+}
+
+.search-btn
+{
+  margin-bottom: 7px;
+  height: 27px;
+}
+
+.tags-class
+{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.rightbox
+{
+  margin-bottom: 20px;
+}

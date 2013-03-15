@@ -1,0 +1,74 @@
+# This file should contain all the record creation needed to seed the database with its default values.
+# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
+#
+# Examples:
+#
+#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
+#   Mayor.create(name: 'Emanuel', city: cities.first)
+
+puts 'SETTING UP DEFAULT USER LOGIN'
+user = User.create! :login => 'neo', :email => 'neo@example.com', :password => '123456', :password_confirmation => '123456', :confirmed_at => DateTime.now
+user.build_profile :fullname => "Jon Doe", :gender => "male", :birth_date => Date.today, :shortbio => "I like bikes and cats!", :location => "Minsk, Belarus", :avatar => "http://oi49.tinypic.com/vd35oj.jpg"
+user.profile.save!
+user.rating.problems_posted = 3
+user.rating.save!
+user.save
+user2 = User.create! :login => 'kitty', :email => 'kitty@example.com', :password => '123456', :password_confirmation => '123456', :confirmed_at => DateTime.now
+user2.build_profile :fullname => "Jane Doe", :gender => "female", :birth_date => Date.today, :shortbio => "It was a warm summer evening when i was born...", :location => "LA, USA", :avatar => "http://oi50.tinypic.com/evdfn8.jpg"
+user2.profile.save!
+user2.rating.problems_posted = 2
+user2.rating.save!
+user2.save
+user3 = User.create! :login => 'killer', :email => 'killer@example.com', :password => '123456', :password_confirmation => '123456', :confirmed_at => DateTime.now
+user3.build_profile :fullname => "Alex", :gender => "male"
+user3.profile.save!
+user3.rating.problems_posted = 1
+user3.rating.save!
+user3.save
+problem1 = Problem.create! :description => "A frog is at the bottom of a 30 meter well. Each day he summons enough energy for one 3 meter leap up the well. Exhausted, he then hangs there for the rest of the day. At night, while he is asleep, he slips 2 meters backwards. How many days does it take him to escape from the well?
+Note: Assume after the first leap that his hind legs are exactly three meters up the well. His hind legs must clear the well for him to escape.", :posted_date => Date.today, :solved_times => 0, :title => "The Frog", :user_id => 1
+problem1.answers.build :answer => 28
+problem1.tag_list = "logic, math"
+problem1.save
+problem2 = Problem.create! :description => "Cathy has six pairs of black socks and six pairs of white socks in her drawer.
+In complete darkness, and without looking, how many socks must she take from the drawer in order to be sure to get a pair that match? ", :posted_date => Date.today, :solved_times => 0, :title => "The Socks", :user_id => 2
+problem2.answers.build :answer => 3
+problem2.tag_list = "logic"
+problem2.save
+problem3 = Problem.create! :description => "You can paddle your canoe seven miles per hour through any placid lake. The stream flows at three miles per hour. The moment you start to paddle up stream a fisherman looses one of his bobbers in the water fourteen miles up stream of you.
+How many hours does it take for you and the bobber to meet? ", :posted_date => Date.today, :solved_times => 0, :title => "The Bobber", :user_id => 3
+problem3.answers.build :answer => 2
+problem3.tag_list = "logic"
+problem3.save
+problem4 = Problem.create! :description => "What word if pronounced right is wrong. But if pronounced wrong is right?", :posted_date => Date.today, :solved_times => 0, :title => "Simple word", :user_id => 1
+problem4.answers.build :answer => "wrong"
+problem4.tag_list = "logic, language"
+problem4.save
+problem5 = Problem.create! :description => "Where does Friday come before Thursday?", :posted_date => Date.today, :solved_times => 0, :title => "Friday before Thursday", :user_id => 1
+problem5.answers.build :answer => "dictionary"
+problem5.tag_list = "logic"
+problem5.save
+problem6 = Problem.create! :description => "When asked about his birthday, a man said:The day before yesterday I was only 25 and next year I will turn 28.
+This is true only one day in a year - when was he born?", :posted_date => Date.today, :solved_times => 0, :title => "A man and his birthday", :user_id => 2
+problem6.answers.build :answer => "December, 31"
+problem6.answers.build :answer => "december, 31"
+problem6.answers.build :answer => "31/12"
+problem6.answers.build :answer => "31 December"
+problem6.tag_list = "logic, number"
+problem6.save
+problem7 = Problem.create! :description => "Two ladies played cards for candy; the winner received one piece per game from the loser. When it was time for one of the ladies to go home, one lady had won three games, while the other lady had won three new pieces of candy. How many individual games had they played?", :posted_date => Date.today, :solved_times => 0, :title => "Ladies and cards", :user_id => 1
+problem7.answers.build :answer => 9
+problem7.answers.build :answer => "nine"
+problem7.tag_list = "logic, cards"
+problem7.save
+
+puts 'New user created: ' << user.login
+puts 'New user created: ' << user2.login
+puts 'New user created: ' << user3.login
+puts 'New problem created: ' << problem1.title
+puts 'New problem created: ' << problem2.title
+puts 'New problem created: ' << problem3.title
+puts 'New problem created: ' << problem4.title
+puts 'New problem created: ' << problem5.title
+puts 'New problem created: ' << problem6.title
+puts 'New problem created: ' << problem7.title

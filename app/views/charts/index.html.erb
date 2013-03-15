@@ -1,0 +1,53 @@
+<script type="text/javascript" charset="utf-8">
+    $(function () {
+        new Highcharts.Chart({
+            chart: { renderTo: 'chart' },
+            title: { text: 'Problems by Day' },
+            xAxis: { type: 'datetime' },
+            yAxis: {
+                title: { text: 'Problems' }
+            },
+            tooltip: {
+                formatter: function () {
+                    return Highcharts.dateFormat("%B %e, %Y", this.x) + ': ' +
+                            this.y;
+                }
+            },
+            series: [{
+                name: "Solved",
+                pointInterval: <%= 1.day * 1000 %>,
+                pointStart: <%= 3.weeks.ago.at_midnight.to_i * 1000 %>,
+                data: <%= (3.weeks.ago.to_date..Date.today).map { |date| Problem.solved_a_day(date).to_i}.inspect %>
+              },{
+                name: "Posted",
+                pointInterval: <%= 1.day * 1000 %>,
+                pointStart: <%= 3.weeks.ago.at_midnight.to_i * 1000 %>,
+                data: <%= (3.weeks.ago.to_date..Date.today).map { |date| Problem.posted_a_day(date).to_i}.inspect %>
+            }]
+        });
+        new Highcharts.Chart({
+            chart: { renderTo: 'chart_us',
+                     defaultSeriesType: 'bar'},
+            title: { text: 'Users Ratings' },
+            xAxis: {
+                title: { text: 'Users' },
+                type: 'string',
+                categories: [<% User.get_top_users %>]
+            },
+            yAxis: {
+                title: { text: 'Ratings' }
+            },
+            series: [{
+                data: <%= User.get_top_users.map {|user| User.solve_rating(user).to_i}.inspect %>
+            }]
+        });
+    });
+</script>
+<legend><h2>Charts</h2></legend>
+
+<div id="chart" style="width:500px; height:300px;">
+</div>
+<br/>
+<br/>
+<div id="chart_us" style="width:500px; height:300px;">
+</div>

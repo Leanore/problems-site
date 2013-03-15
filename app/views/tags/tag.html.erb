@@ -1,0 +1,29 @@
+<%- model_class = Problem -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => "Tag: #{params[:id]}" %></h1>
+</div>
+<h3><%=t '.title', :default => "Results: #{@problems.count}"%></h3>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th><%= model_class.human_attribute_name(:title) %></th>
+    <th><%= model_class.human_attribute_name(:description) %></th>
+    <th><%= model_class.human_attribute_name(:solved_times) %></th>
+    <th><%= model_class.human_attribute_name(:user_id) %></th>
+    <th><%= model_class.human_attribute_name(:posted_date) %></th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @problems.each do |problem| %>
+      <tr>
+        <td><%= link_to problem.title, problem_path(problem)%></td>
+        <td><%= strip_tags(problem.description) %></td>
+        <td><%= problem.solved_times %></td>
+        <td><%= link_to problem.user.try(:login), user_path(problem.user_id) %></td>
+        <td><%= problem.posted_date %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<%= will_paginate(@problems)  %>

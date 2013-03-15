@@ -1,0 +1,25 @@
+<% @problems_posted.each do |problem| %>
+<table class="table border-free-table">
+  <tbody>
+  <tr class="title-class">
+    <td class="title" >
+      <h3>
+        <%= link_to problem.title, problem_path(problem) %>
+      </h3>
+    </td>
+  </tr>
+  <tr class="description-class" >
+    <td class="description" >
+      <%= truncate(strip_tags(problem.description),
+                   :length => 200) %>
+      <br/>
+    </td>
+  </tr>
+  <tr>
+    <td class="posted" >
+      <i>Was posted at <%= problem.created_at.to_time.strftime("%I:%M %p")%>, <%= problem.created_at.to_date.strftime("%B %d ")%></i>
+    </td>
+  </tr>
+  </tbody>
+</table>
+<% end %>
