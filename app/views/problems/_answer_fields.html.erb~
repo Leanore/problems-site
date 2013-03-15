@@ -1,0 +1,14 @@
+<<<<<<< HEAD
+<div class='nested-fields'>
+  <%= f.input :answer, :required => true, :input_html => {:class => "field-width"} %>
+  <%= link_to_remove_association "remove answer", f %>
+</div>
+=======
+<p class="fields">
+<%= f.label :answer, :class => 'control-label' %>
+<div class="controls">
+  <%= f.text_field :answer, :class => 'text_field' %>
+  <%= link_to_remove_fields "remove", f %>
+</div>
+</p>
+>>>>>>> c470fe1b5c9453ea7a0d59301d2d70f8c3e49182

@@ -1,0 +1,11 @@
+# Load the rails application
+require File.expand_path('../application', __FILE__)
+
+# Initialize the rails application
+CProject::Application.initialize!
+<<<<<<< HEAD
+
+require "will_paginate"
+
+=======
+>>>>>>> c470fe1b5c9453ea7a0d59301d2d70f8c3e49182

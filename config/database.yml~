@@ -21,7 +21,11 @@ development:
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
+<<<<<<< HEAD
 test: &test
+=======
+test:
+>>>>>>> c470fe1b5c9453ea7a0d59301d2d70f8c3e49182
   adapter: mysql2
   encoding: utf8
   reconnect: false
@@ -40,6 +44,9 @@ production:
   username: root
   password:
   socket: /var/run/mysqld/mysqld.sock
+<<<<<<< HEAD
 
 cucumber:
   <<: *test
+=======
+>>>>>>> c470fe1b5c9453ea7a0d59301d2d70f8c3e49182

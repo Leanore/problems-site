@@ -1,0 +1,18 @@
+<<<<<<< HEAD
+$(":input:not(input[type=submit])").val("");
+$("#problem_desc").html("<%= escape_javascript( render(:partial => "problem_description") ) %>");
+$("#site_notice").html("<%= escape_javascript( render(:partial => "layouts/messages") ) %>");
+$("#form-actions-solve").html("<%= escape_javascript( render(:partial => "solve_form") ) %>");
+<% publish_to "/problems/#{:id}/solve" do %>
+$("#log").html("<%= escape_javascript( render(:partial => 'layouts/log') ) %>");
+<% end %>
+<% flash.discard %>
+
+=======
+page[:solve_form].reset
+page[:site_notice].reset
+page[:flash_notice].reset
+page.replace_html :site_notice, flash[:notice]
+page.replace_html :flash_notice, flash[:notice]
+page.replace_html :notice, flash[:notice]
+>>>>>>> c470fe1b5c9453ea7a0d59301d2d70f8c3e49182
